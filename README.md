@@ -62,13 +62,10 @@ def lambda_handler(event, context):
     SENDER = "your-verified-sender@example.com"
     RECIPIENT = "recipient@example.com"
     AWS_REGION = "us-east-1"
-    
     SUBJECT = "Automated Notification from AWS Lambda"
-    
     # Email body
     BODY_TEXT = ("Hello,\r\n"
                  "This is a test email sent from AWS Lambda using Amazon SES.")
-    
     BODY_HTML = f"""<html>
     <head></head>
     <body>
@@ -76,12 +73,9 @@ def lambda_handler(event, context):
       <p>This email was sent using <b>AWS Lambda</b> and <b>Amazon SES</b>.</p>
     </body>
     </html>"""
-    
     CHARSET = "UTF-8"
-
     # Create a new SES client
     client = boto3.client('ses', region_name=AWS_REGION)
-
     # Try to send the email
     try:
         response = client.send_email(
