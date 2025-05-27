@@ -42,3 +42,8 @@ By leveraging AWS Lambda, the project avoids the need for managing servers, lead
 
 The serverless model also allows for automatic scaling based on demand.
 
+
+HERE IS THE LINK TO THE PROJECT VIDEO:
+
+https://video.syr.edu/media/t/1_4s20gxcw
+
